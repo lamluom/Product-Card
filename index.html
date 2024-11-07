@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Cards</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="company-name">SHOP.CO</div>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by ID or Name..."
+          />
+          <button id="search-button">Search</button>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+    </header>
+    <aside>
+      <ul>
+        <li>
+          <h4 onclick="fetchSearchResults('home-decoration')">
+            Home Decoration
+          </h4>
+        </li>
+        <li><h4 onclick="fetchSearchResults('furniture')">Furniture</h4></li>
+        <li>
+          <h4 onclick="fetchSearchResults('sports-accessories')">
+            Sports Accessories
+          </h4>
+        </li>
+        <li><h4 onclick="fetchSearchResults('sunglasses')">Sunglasses</h4></li>
+        <li>
+          <h4 onclick="fetchSearchResults('smartphones')">SmartPhones</h4>
+        </li>
+        <li><h4 onclick="fetchSearchResults('beauty')">Beauty</h4></li>
+        <li><h4 onclick="fetchSearchResults('motorcycle')">Motorcycle</h4></li>
+        <li>
+          <h4 onclick="fetchSearchResults('mens-watches')">Mens Watches</h4>
+        </li>
+        <li><h4 onclick="fetchSearchResults('mens-shoes')">Mens Shoes</h4></li>
+        <li>
+          <h4 onclick="fetchSearchResults('mens-clothing')">Mens Clothing</h4>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      <h1>Product Cards</h1>
+      <div class="product-container" id="product-container"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
